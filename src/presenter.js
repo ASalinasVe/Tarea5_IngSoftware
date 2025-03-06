@@ -12,11 +12,11 @@
 //   div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
 // });
 
-import {saludar1,saludar2} from "./saludador.js";
+import {saludar1,saludar2,saludar3} from "./saludador.js";
 
 const form1 = document.querySelector("#saludar1-form");
 const form2 = document.querySelector("#saludar2-form");
-
+const form3 = document.querySelector("#saludar3-form");
 
 form1.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -33,4 +33,16 @@ form2.addEventListener("submit", (event) => {
     alert("Por favor, ingresa tu nombre.");
 }
 });
+
+form3.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const nombreInput = document.querySelector("#nombre-hora").value.trim();
+  if (nombreInput !== "") {
+    saludar3(nombreInput);
+  } else {
+    alert("Por favor, ingresa tu nombre.");
+  }
+});
+
 
