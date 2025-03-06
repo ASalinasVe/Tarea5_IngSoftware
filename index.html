@@ -30,6 +30,39 @@
     </form>
     <div id="saludo-con-hora"></div>
 
+    <div></div>
+
+    <form id="saludo-genero-edad-form">
+      <div>Saludo por Género y Edad:</div>
+      <label for="nombre-genero-edad">Escribe tu nombre:</label>
+      <input type="text" id="nombre-genero-edad"/>
+
+      <label for="edad">Escribe tu edad:</label>
+      <input type="number" id="edad"/>
+
+      <div>
+          <input type="radio" id="genero-masculino" name="genero" value="masculino" required />
+          <label for="genero-masculino">Masculino</label>
+          <input type="radio" id="genero-femenino" name="genero" value="femenino" />
+          <label for="genero-femenino">Femenino</label>
+      </div>
+
+      <button type="submit">Saludar por Género y Edad</button>
+    </form>
+
+    <div id="saludo-genero-edad"></div>
+
+    <div></div>
+    <form>
+      <div>Saludo en Idioma:</div>
+      <label for="nombre-idioma">Escribe tu nombre:</label>
+      <input type="text" id="nombre-idioma"/>
+
+      <button type="button" id="saludo-espanol">Saludar en Español</button>
+      <button type="button" id="saludo-ingles">Saludar en Inglés</button>
+    </form>
+
+    <div id="saludo-idioma"></div>
 
 
     <script type="module" src="./src/presenter.js"></script>
