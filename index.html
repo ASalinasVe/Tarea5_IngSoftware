@@ -5,66 +5,26 @@
   </head>
   <body>
     <h1>Saludador</h1>
-    <form id="saludar1-form">
-      <label for="primer-saludo">Primer Saludo:</label>
-      <button type="submit">Saludar</button>
+    <form id="saludo-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required />
+  
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" required />
+  
+      <label for="genero">Género:</label>
+      <select id="genero">
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+      </select>
+  
+      <button type="button" id="btn-espanol">Saludar en Español</button>
+      <button type="button" id="btn-ingles">Saludar en Inglés</button>
     </form>
-
-    <div></div>
-    <form id="saludar2-form">
-      <div>Segundo saludo: </div>
-      <label for="segundo-saludo">Escribe tu nombre:</label>
-      <input type="text" id="nombre"/>
-      <button type="submit">Saludar</button>
-    </form>
-
+  
     <div id="saludo-mensaje"></div>
 
-    <div></div>
-
-    <form id="saludar3-form">
-      <div>Tercer Saludo: </div>
-      <label for="tercer-saludo">Escribe tu nombre: </label>
-      <input type="text" id="nombre-hora"/>
-      <button type="submit">Saludar</button>
-    </form>
-    <div id="saludo-con-hora"></div>
-
-    <div></div>
-
-    <form id="saludo-genero-edad-form">
-      <div>Saludo por Género y Edad:</div>
-      <label for="nombre-genero-edad">Escribe tu nombre:</label>
-      <input type="text" id="nombre-genero-edad"/>
-
-      <label for="edad">Escribe tu edad:</label>
-      <input type="number" id="edad"/>
-
-      <div>
-          <input type="radio" id="genero-masculino" name="genero" value="masculino" required />
-          <label for="genero-masculino">Masculino</label>
-          <input type="radio" id="genero-femenino" name="genero" value="femenino" />
-          <label for="genero-femenino">Femenino</label>
-      </div>
-
-      <button type="submit">Saludar por Género y Edad</button>
-    </form>
-
-    <div id="saludo-genero-edad"></div>
-
-    <div></div>
-    <form>
-      <div>Saludo en Idioma:</div>
-      <label for="nombre-idioma">Escribe tu nombre:</label>
-      <input type="text" id="nombre-idioma"/>
-
-      <button type="button" id="saludo-espanol">Saludar en Español</button>
-      <button type="button" id="saludo-ingles">Saludar en Inglés</button>
-    </form>
-
-    <div id="saludo-idioma"></div>
-
-
     <script type="module" src="./src/presenter.js"></script>
+
   </body>
 </html>
